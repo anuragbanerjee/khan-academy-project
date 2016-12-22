@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Infection Visualization</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <style type="text/css">
+          #sigma-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 25px;
+          }
+        </style>
+
+        <div id="sigma-container"></div>
+        <script src="js/sigma/sigma.min.js"></script>
+        <script src="js/sigma/sigma.parsers.gexf.min.js"></script>
+        <script src="js/sigma/sigma.layout.forceAtlas2.min.js"></script>
+        <script src="js/sigma/sigma.renderers.snapshot.min.js"></script>
+        <script>
+          a = null;
+          sigma.parsers.gexf(
+            'data/main.gexf', {
+              container: 'sigma-container'
+            }, function (s) {
+              s.graph.edges().forEach(function(edge){
+                edge.type = "arrow";
+              });
+              s.refresh();
+              s.startForceAtlas2();
+              a = s;
+            }
+          );
+
+        </script>
+    </body>
+</html>
