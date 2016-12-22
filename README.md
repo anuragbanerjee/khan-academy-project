@@ -44,6 +44,8 @@ This was the hardest to implement, simply because there were a lot of possible w
 
 I made a simple visualization of the network graph. To do this, I converted my node and edge data after the infection into an GEXF file, which is an open-source standard for describing graphs. Then, I used Sigma.js to fetch and parse the GEXF files and display the graph. It was especially difficult figuring out how to algorithmically layout the nodes on the graph, but I discovered the [Force Atlas 2 layout algorithm](http://webatlas.fr/tempshare/ForceAtlas2_Paper.pdf) and used it for my node layouts, so they look much more readable. In the visualization, gray represents "uninfected" users and red represents "infected" users. You can find the code for that in the html folder.
 
+![visualization](visualization.png)
+
 ## Gotchas
 
 - Circular Dependencies among Student/Teacher relationships will throw an error, halt execution, and declare the data as invalid. Self-coaching relations would fall under this umbrella. Realistically, there would be some checking mechanism to make sure the data doesn't end up with one.

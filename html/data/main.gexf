@@ -50,13 +50,13 @@
                 </node>
 
                 <node id="7" label="Oscar (#7)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="7" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="8" label="Robert (#8)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="8" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -68,13 +68,13 @@
                 </node>
 
                 <node id="10" label="Nellie (#10)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="0" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="11" label="Toby (#11)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="1" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -86,67 +86,67 @@
                 </node>
 
                 <node id="13" label="Dwight (#13)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="3" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="14" label="Jan (#14)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="4" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="15" label="Angela (#15)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="5" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="16" label="Packer (#16)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="6" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="17" label="Erin (#17)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="7" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="18" label="Hodor (#18)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="8" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="19" label="Kelly (#19)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="9" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="20" label="Holly (#20)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="0" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="21" label="Andy (#21)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="1" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="22" label="Michael (#22)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="2" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="23" label="Jim (#23)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="3" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -158,109 +158,109 @@
                 </node>
 
                 <node id="25" label="Pete (#25)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="5" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="26" label="Clark (#26)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="6" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="27" label="Karen (#27)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="7" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="28" label="David (#28)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="8" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="29" label="Jo (#29)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="9" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="30" label="Ron (#30)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="0" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="31" label="Leslie (#31)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="1" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="32" label="Tom (#32)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="2" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="33" label="Ann (#33)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="3" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="34" label="April (#34)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="4" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="35" label="Andy (#35)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="5" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="36" label="Ben (#36)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="6" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="37" label="Chris (#37)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="7" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="38" label="Jerry (#38)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="8" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="39" label="Donna (#39)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="9" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="40" label="Mark (#40)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="0" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="41" label="Craig (#41)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="1" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="42" label="Tammy (#42)">
-                    <viz:color b="51" g="51" r="255"/>
+                    <viz:color b="128" g="128" r="128"/>
                     <viz:position x="2" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
