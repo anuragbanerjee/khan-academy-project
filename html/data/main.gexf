@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gephi.org/gexf" xmlns:viz="http://www.gephi.org/gexf/viz">
-    <meta lastmodifieddate="2009-03-20">
+    <meta lastmodifieddate="2016-12-22">
         <creator>Anurag Banerjee</creator>
         <description>Khan Academy Infection Project</description>
     </meta>
@@ -8,43 +8,43 @@
         <nodes>
             
                 <node id="0" label="Kevin (#0)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="0" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="1" label="Phyllis (#1)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="1" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="2" label="Darryl (#2)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="2" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="3" label="Ryan (#3)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="3" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="4" label="Gabe (#4)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="4" y="1" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="5" label="Stanley (#5)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="5" y="2" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
 
                 <node id="6" label="Roy (#6)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="6" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -62,7 +62,7 @@
                 </node>
 
                 <node id="9" label="Meredith (#9)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="9" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -80,7 +80,7 @@
                 </node>
 
                 <node id="12" label="Creed (#12)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="2" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>
@@ -152,7 +152,7 @@
                 </node>
 
                 <node id="24" label="Pam (#24)">
-                    <viz:color b="128" g="128" r="128"/>
+                    <viz:color b="51" g="51" r="255"/>
                     <viz:position x="4" y="0" z="0.0"/>
                     <viz:size value="5"/>
                 </node>

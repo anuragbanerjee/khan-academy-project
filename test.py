@@ -13,11 +13,11 @@ from infections import total_infection, limited_infection
 from exporter import generate_GEXF
 from User import User
 
-import os
-
-users = []
-
 def visualize():
+  '''
+  Gathers data about nodes and edges to make a GEFX file, and launches
+  a visualization of the entire graph.
+  '''
   nodes = []
   for u in User._all:
     t = u.teacher.id if u.teacher != None else u.id
@@ -27,7 +27,6 @@ def visualize():
       "infected": u.site_version == 1
     }
     nodes.append(node)
-    os.system("cd html; python -m SimpleHTTPServer & open http://localhost:8000")
 
   edges = []
   with open("data/relations.csv") as f:
@@ -39,11 +38,46 @@ def visualize():
   with open("html/data/main.gexf", "w") as f:
     f.write(gexf)
 
+def get_infection_type():
+  print "\nEnter 1 for total infection or 2 for limited infection: ",
+  while(True):
+    infection_type = raw_input()
+    if infection_type == "1":
+      return "TOTAL"
+    if infection_type == "2":
+      return "LIMITED"
+    print "Invalid input. Please enter a 1 or a 2: ",
+
+def get_infection_limit():
+  print "\nAbout many people should be infected? ",
+  while(True):
+    infection_limit = raw_input()
+    if infection_limit.isdigit():
+      infection_limit = int(infection_limit)
+      if 1 <= infection_limit and infection_limit <= len(User._all):
+        return infection_limit
+    print "Invalid input. Please enter a number between {} and {}: ".format(
+      0, len(User._all) - 1
+    ),
+
+def get_starting_point():
+  print "\nEnter the ID of the user to begin infection: ",
+  while(True):
+    starting_point = raw_input()
+    if starting_point.isdigit():
+      starting_point = int(starting_point)
+      if 0 < starting_point and starting_point < len(User._all):
+        return User.find(starting_point)
+    print "Invalid input. Please enter a number between {} and {}: ".format(
+      0, len(User._all) - 1
+    ),
+
+
 def main():
   # creates dummy users and student-teacher connections
   with open("data/users.csv") as f:
     for name in f:
-      users.append(User(name.strip()))
+      User(name.strip())
 
   with open("data/relations.csv") as f:
     for line in f:
@@ -64,42 +98,12 @@ def main():
   for i in User._all:
     print "{}\t|\t{}".format(i.id, i.name)
 
-  # configure starting point for infection and validate input
-  print "\nEnter ID of first User to infect: ",
-  starting_point = raw_input()
-  while(True):
-    if starting_point.isdigit():
-      starting_point = int(starting_point)
-      if starting_point >= 0 and starting_point < len(User._all):
-        break
-    print "Invalid input. Please enter a number between {} and {}: ".format(0, len(User._all) - 1),
-    starting_point = raw_input()
-  starting_point = users[starting_point]
-
-
-  print "Infection Limit (leave blank for total infection): ",
-  infection_limit = raw_input()
-  while(True):
-    # configure for total infection
-    if infection_limit == "":
-      infection_limit = len(User._all)
-      break
-
-    # configure for limited infection
-    if infection_limit.isdigit():
-      infection_limit = int(infection_limit)
-      if infection_limit >= 0 and infection_limit <= len(User._all):
-        break
-
-    # retry if invalid input
-    print "Invalid input. Please enter nothing or a number between {} and {}: ".format(0, len(User._all)),
-    infection_limit = raw_input()
-
   print "\n--- INFECTION BEGINS ---"
-  if infection_limit == len(User._all):
-    total_infection(starting_point)
+  infection_type = get_infection_type()
+  if infection_type ==  "TOTAL":
+    total_infection(get_starting_point())
   else:
-    limited_infection(starting_point, infection_limit, 5)
+    limited_infection(get_infection_limit(), 5)
 
   print "\n--- REPORT ---"
   print "Out of {} total users, {} of them were infected.".format(

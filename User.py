@@ -70,6 +70,9 @@ class User(object):
     return User._all[id]
 
   def __str__(self):
+    '''
+    For debugging purposes.
+    '''
     t = self.teacher
     if t == None:
       t = "none"

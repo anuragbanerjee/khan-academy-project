@@ -12,7 +12,7 @@ interpret into an interactive graph.
 
 '''
 
-def generate_GEFX(node_data, edge_data):
+def generate_GEXF(node_data, edge_data):
     nodes_template = '''
                 <node id="{}" label="{}">
                     <viz:color {}/>
@@ -47,9 +47,9 @@ def generate_GEFX(node_data, edge_data):
     for index, data in enumerate(node_data):
         x = index % 10
         y = index % 3
-        color = 'b="51" g="51" r="255"'
+        color = 'b="128" g="128" r="128"'
         if data["infected"]:
-            color = 'b="128" g="128" r="128"'
+            color = 'b="51" g="51" r="255"'
         nodes += nodes_template.format(index, data["name"] + " (#" + str(index) + ")", color, x, y, 5)
 
     # edge data is an array of tuples
